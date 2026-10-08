@@ -47,6 +47,7 @@ _auth_settings = (
     AuthSettings(
         issuer_url=MCP_PUBLIC_BASE_URL,
         resource_server_url=f"{MCP_PUBLIC_BASE_URL}/mcp",
+        validate_token_resource=True,
         client_registration_options=ClientRegistrationOptions(
             enabled=True,
             valid_scopes=[MCP_REQUIRED_SCOPE],

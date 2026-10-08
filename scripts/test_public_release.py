@@ -37,6 +37,7 @@ class PublicReleaseTests(unittest.TestCase):
                     self.assertEqual((await client.get('/healthz')).status_code, 200)
                     request = await client.post('/mcp', json={'jsonrpc': '2.0', 'id': 1, 'method': 'tools/list'})
                     self.assertEqual(request.status_code, 401)
+                self.assertTrue(server._auth_settings.validate_token_resource)
         asyncio.run(exercise())
 
     def test_http_refuses_to_start_without_oauth_base_url(self):
@@ -115,6 +116,8 @@ class PublicReleaseTests(unittest.TestCase):
     def test_refresh_tokens_keep_the_resource_and_are_bound_to_the_client(self):
         with tempfile.TemporaryDirectory() as directory:
             provider = PairingOAuthProvider(Path(directory) / 'oauth.sqlite3', 'https://mail.example.com')
+            with self.assertRaises(TokenError):
+                provider._issue_tokens('owner', ['mailbox'], 'https://other.example.com/mcp')
             owner = OAuthClientInformationFull(client_id='owner', redirect_uris=['https://example.com/callback'])
             other = OAuthClientInformationFull(client_id='other', redirect_uris=['https://example.com/callback'])
             issued = provider._issue_tokens('owner', ['mailbox'], 'https://mail.example.com/mcp')

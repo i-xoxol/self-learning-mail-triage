@@ -127,6 +127,8 @@ class PairingOAuthProvider(
     async def authorize(
         self, client: OAuthClientInformationFull, params: AuthorizationParams
     ) -> str:
+        if params.resource and params.resource != f"{self.public_base_url}/mcp":
+            raise ValueError("Authorization is limited to this MCP resource")
         request_key = _opaque_token()
         payload = {
             "client_id": client.client_id,
@@ -167,7 +169,7 @@ class PairingOAuthProvider(
             code_challenge=params.code_challenge,
             redirect_uri=params.redirect_uri,
             redirect_uri_provided_explicitly=params.redirect_uri_provided_explicitly,
-            resource=params.resource,
+            resource=params.resource or f"{self.public_base_url}/mcp",
             subject="local-mailbox-owner",
         )
         with closing(self._connect()) as db, db:
@@ -289,6 +291,9 @@ class PairingOAuthProvider(
         return model.model_validate_json(row["payload"])
 
     def _issue_tokens(self, client_id: str, scopes: list[str], resource: str | None) -> OAuthToken:
+        resource = resource or f"{self.public_base_url}/mcp"
+        if resource != f"{self.public_base_url}/mcp":
+            raise TokenError("invalid_target", "Token is limited to this MCP resource")
         access_value = _opaque_token()
         refresh_value = _opaque_token()
         access = AccessToken(
