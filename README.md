@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/i-xoxol/self-learning-mail-triage/actions/workflows/test.yml"><img src="https://github.com/i-xoxol/self-learning-mail-triage/actions/workflows/test.yml/badge.svg" alt="Offline checks"></a>
+  <a href="https://github.com/i-xoxol/self-learning-mail-triage/actions/workflows/test.yml"><img src="https://github.com/i-xoxol/self-learning-mail-triage/actions/workflows/test.yml/badge.svg?branch=main" alt="Offline checks"></a>
   <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white" alt="Python 3.11 and newer">
   <img src="https://img.shields.io/badge/Protocol-MCP-163b3c" alt="Model Context Protocol">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-88d6b5" alt="MIT license"></a>

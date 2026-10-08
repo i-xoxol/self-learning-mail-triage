@@ -190,13 +190,13 @@ class TriageServerTests(unittest.TestCase):
     def test_outlook_html_preserves_signature_lines_and_escapes_content(self):
         rendered = reply_text_to_html(
             "Hi Luke,\n\nThat is fine & confirmed.\n\nBest regards,\nMorgan Lee\n"
-            "Assistant Professor of Cybersecurity,\nSchool of Computing and Engineering\n"
-            "College of Arts and Sciences\n\nBook time to meet with me:\n"
+            "Project Lead,\nExample Studio\n"
+            "Operations Team\n\nBook time to meet with me:\n"
             + "https://outlook.office.com/bookwithme/user/example"
         )
         self.assertIn("Hi Luke,</div><br><div>That is fine &amp; confirmed.", rendered)
-        self.assertIn("Best regards,<br>Morgan Lee<br>Assistant Professor", rendered)
-        self.assertIn("School of Computing and Engineering<br>College of Arts and Sciences", rendered)
+        self.assertIn("Best regards,<br>Morgan Lee<br>Project Lead", rendered)
+        self.assertIn("Example Studio<br>Operations Team", rendered)
         self.assertIn(f'<a href="{"https://outlook.office.com/bookwithme/user/example"}">Book time to meet with me</a>', rendered)
 
     def test_relevant_rules_and_verified_contact_gate(self):
