@@ -1,0 +1,21 @@
+[Unit]
+Description=Self-learning Mail Triage MCP
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/apps/self-learning-mail-triage
+EnvironmentFile=%h/.config/mail-triage/service.env
+Environment=OUTLOOK_MCP_TRANSPORT=streamable-http
+Environment=OUTLOOK_MCP_HTTP_HOST=127.0.0.1
+ExecStart=%h/apps/self-learning-mail-triage/.venv/bin/python scripts/mcp_server.py
+Restart=on-failure
+RestartSec=10
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=%h/.local/share/mail-triage
+
+[Install]
+WantedBy=default.target

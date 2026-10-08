@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" role="img" aria-labelledby="title desc">
+<title id="title">Self-learning Mail Triage</title><desc id="desc">A local email assistant for reviewed inbox cleanup, unsent drafts, and learning from edits.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102e31"/><stop offset="1" stop-color="#1b4948"/></linearGradient></defs>
+<rect width="1400" height="560" rx="28" fill="url(#bg)"/>
+<circle cx="1260" cy="64" r="222" fill="#88d6b5" opacity=".05"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="64" y="61" fill="#88d6b5" font-size="18" letter-spacing="4">A PERSONAL AUTOMATION PROJECT</text>
+<text x="60" y="162" fill="#f2faf6" font-size="72" font-weight="700">Self-learning</text>
+<text x="60" y="248" fill="#f2faf6" font-size="82" font-weight="700">Mail Triage</text>
+<text x="64" y="307" fill="#c5e8da" font-size="27">Clean your inbox. Draft in your voice.</text>
+<text x="64" y="346" fill="#c5e8da" font-size="27">Learn from the edits that matter.</text>
+<text x="64" y="397" fill="#9cc2b9" font-size="19">Reviewed actions, unsent replies, and a local playbook</text>
+<text x="64" y="426" fill="#9cc2b9" font-size="19">that gets more useful with every resolved conversation.</text>
+<rect x="64" y="461" width="208" height="35" rx="17" fill="#295653"/><text x="84" y="485" fill="#d8f4e8" font-size="16">YOU STAY IN CONTROL</text>
+<rect x="288" y="461" width="220" height="35" rx="17" fill="#295653"/><text x="309" y="485" fill="#d8f4e8" font-size="16">MEMORY STAYS LOCAL</text>
+<text x="64" y="535" fill="#8bb6ab" font-size="16">Python · Microsoft Graph · MCP · SQLite · Self-hosted</text>
+<rect x="905" y="71" width="431" height="421" rx="24" fill="#0b2429" stroke="#427469"/>
+<circle cx="936" cy="104" r="5" fill="#88d6b5"/><circle cx="954" cy="104" r="5" fill="#69bcb4"/><circle cx="972" cy="104" r="5" fill="#42665e"/>
+<text x="1001" y="109" fill="#b8d9cc" font-size="15">THE LEARNING LOOP</text>
+<rect x="931" y="135" width="379" height="81" rx="13" fill="#173e3e"/>
+<text x="950" y="162" fill="#f0faf5" font-size="19" font-weight="600">01  Review the inbox</text>
+<text x="950" y="190" fill="#a6cfc0" font-size="16">Needs a decision? Keep it unread.</text>
+<path d="M1121 218v17" stroke="#69bcb4" stroke-width="2"/><path d="m1116 231 5 5 5-5" fill="none" stroke="#69bcb4" stroke-width="2"/>
+<rect x="931" y="239" width="379" height="81" rx="13" fill="#173e3e"/>
+<text x="950" y="266" fill="#f0faf5" font-size="19" font-weight="600">02  Prepare a useful reply</text>
+<text x="950" y="294" fill="#a6cfc0" font-size="16">Current facts + approved preferences.</text>
+<path d="M1121 322v17" stroke="#69bcb4" stroke-width="2"/><path d="m1116 335 5 5 5-5" fill="none" stroke="#69bcb4" stroke-width="2"/>
+<rect x="931" y="343" width="379" height="81" rx="13" fill="#234e46"/>
+<text x="950" y="370" fill="#f0faf5" font-size="19" font-weight="600">03  Learn from your edits</text>
+<text x="950" y="398" fill="#b7e1cd" font-size="16">Better examples. Reviewable rules.</text>
+<text x="957" y="460" fill="#88d6b5" font-size="16">DRAFT ONLY</text><text x="1104" y="460" fill="#9dc5b8" font-size="16">NO MODEL RETRAINING</text>
+</g></svg>

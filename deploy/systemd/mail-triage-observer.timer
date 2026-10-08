@@ -1,0 +1,11 @@
+[Unit]
+Description=Observe draft edits each morning
+
+[Timer]
+OnCalendar=*-*-* 06:00:00
+RandomizedDelaySec=120
+Persistent=true
+Unit=mail-triage-observer.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Observe Mail Triage draft outcomes
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/apps/self-learning-mail-triage
+EnvironmentFile=%h/.config/mail-triage/service.env
+ExecStart=%h/apps/self-learning-mail-triage/.venv/bin/python scripts/observe_outcomes.py
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=%h/.local/share/mail-triage

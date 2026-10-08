@@ -1,0 +1,23 @@
+{
+  "name": "self-learning-mail-triage",
+  "version": "1.0.0",
+  "description": "An Outlook mail triage plugin that learns from reviewed reply edits and resolved conversations.",
+  "author": { "name": "i-xoxol", "url": "https://github.com/i-xoxol" },
+  "license": "MIT",
+  "keywords": ["email", "outlook", "mcp", "self-learning", "productivity"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.local.json",
+  "interface": {
+    "displayName": "Self-learning Mail Triage",
+    "shortDescription": "Clean your inbox. Draft in your voice. Learn from your edits.",
+    "longDescription": "Keeps attention-worthy mail unread, prepares unsent replies, and improves a local preference playbook using matched draft outcomes and redacted historical cases.",
+    "developerName": "i-xoxol",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Interactive"],
+    "defaultPrompt": [
+      "Review my unread inbox and show me a triage plan.",
+      "Draft replies using my preferences and similar resolved cases.",
+      "Review my reply edits and propose improvements to the playbook."
+    ]
+  }
+}

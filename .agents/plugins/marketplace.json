@@ -1,0 +1,12 @@
+{
+  "name": "mail-triage-local",
+  "interface": { "displayName": "Self-learning Mail Triage — local" },
+  "plugins": [
+    {
+      "name": "self-learning-mail-triage",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

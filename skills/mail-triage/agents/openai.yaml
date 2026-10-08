@@ -1,0 +1,4 @@
+interface:
+  display_name: "Self-learning Mail Triage"
+  short_description: "Review mail, draft replies, and learn from edits."
+  default_prompt: "Review my unread Outlook inbox and prepare a complete triage plan. Draft useful replies when their substance is clear, and keep anything requiring my decision unread."

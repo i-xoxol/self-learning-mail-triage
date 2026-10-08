@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="350" viewBox="0 0 1400 350" role="img" aria-labelledby="title desc">
+<title id="title">How the assistant learns</title><desc id="desc">Draft, owner review and send, observe, retrieve examples, and review a preference proposal. All content is fictional.</desc>
+<rect width="1400" height="350" rx="24" fill="#f0f6f3"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="40" y="45" font-size="17" fill="#315b50" letter-spacing="2">FROM A ONE-TIME EDIT TO A REUSABLE PREFERENCE</text>
+<g fill="#fff" stroke="#c5dbcf"><rect x="40" y="77" width="246" height="189" rx="16"/><rect x="309" y="77" width="246" height="189" rx="16"/><rect x="578" y="77" width="246" height="189" rx="16"/><rect x="847" y="77" width="246" height="189" rx="16"/><rect x="1116" y="77" width="244" height="189" rx="16"/></g>
+<g fill="#163b3c" font-size="22" font-weight="600"><text x="60" y="115">01  Draft</text><text x="329" y="115">02  Review &amp; send</text><text x="598" y="115">03  Observe</text><text x="867" y="115">04  Retrieve</text><text x="1136" y="115">05  Review a rule</text></g>
+<g fill="#48675b" font-size="18"><text x="60" y="154">A long confirmation.</text><text x="60" y="185">Prepared, never sent</text><text x="60" y="212">by the plugin.</text>
+<text x="329" y="154">“Confirmed. See you</text><text x="329" y="181">then.”</text><text x="329" y="223">The owner sends it.</text>
+<text x="598" y="154">Compare the draft</text><text x="598" y="181">with the later reply.</text><text x="598" y="223">Retain a local case.</text>
+<text x="867" y="154">Find similar resolved</text><text x="867" y="181">conversations.</text><text x="867" y="223">Examples, not orders.</text>
+<text x="1136" y="154">“Keep simple replies</text><text x="1136" y="181">to two sentences.”</text><text x="1136" y="223">Approve or reject.</text></g>
+<g stroke="#538c77" fill="none" stroke-width="2"><path d="M288 173h16m-6-5 6 5-6 5"/><path d="M557 173h16m-6-5 6 5-6 5"/><path d="M826 173h16m-6-5 6 5-6 5"/><path d="M1095 173h16m-6-5 6 5-6 5"/></g>
+<text x="40" y="311" fill="#557b68" font-size="17">Fictional example · Style automation is optional · New decisions and recipient changes still require approval</text>
+</g></svg>

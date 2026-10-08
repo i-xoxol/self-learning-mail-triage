@@ -1,0 +1,23 @@
+# Fictional example only. Copy outside the checkout and edit for your own use.
+[voice]
+name = "My email voice"
+guidance = [
+  "Use a friendly, direct tone.",
+  "Keep simple confirmations to two sentences.",
+  "Ask one focused question when a decision is missing.",
+]
+
+[signature]
+text = """
+Best regards,
+Morgan Lee
+"""
+closing_names = ["Morgan", "Morgan Lee"]
+
+# These references never authorize CC. Add CC contacts to the verified registry.
+# [[reference_contacts]]
+# name = "Example Support"
+# role = "Support team"
+# email = "support@example.com"
+# keywords = "support troubleshooting accounts"
+# source = "https://example.com/contact"
